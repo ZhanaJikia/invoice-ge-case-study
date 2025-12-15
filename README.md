@@ -40,5 +40,5 @@ integrations, user-facing flows, and shipping features with attention to detail.
 - Built notifications and shipped multiple product improvements
 
 ## Contact
-- LinkedIn: [here]https://www.linkedin.com/in/zhana-jikia-b9648a196/
+- LinkedIn: [here](https://www.linkedin.com/in/zhana-jikia-b9648a196/)
 - Email: <janejikia@gmail.com>
