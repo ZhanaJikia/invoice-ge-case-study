@@ -1,7 +1,7 @@
 # Invoice.ge — Case Study (Private Code, Sold)
 
 Invoice.ge is a web app for creating and managing invoices (clients, line items, totals, and invoice statuses).
-This repo is a public case study (core code may be private), focused on architecture + features shipped.
+This repo is a public case study (core code may be private), focused on shipped features + architecture. (Now part of TBC Bank)
 
 ## What I shipped
 - **rs.ge integration**
@@ -10,34 +10,34 @@ This repo is a public case study (core code may be private), focused on architec
   - Backend: implemented SMS sending service + validation/error handling.
   - Frontend: added user-facing triggers, loading states, and success/error feedback.
 - **Notifications**
-  - Built notification flows for key events (e.g., invoice status updates, reminders).
+  - Built notification flows for key events (invoice updates / reminders).
+- **Testing**
+  - Wrote **unit tests** for core logic.
+  - Added **Cypress E2E tests** for critical frontend flows.
 - **Quality / maintenance**
-  - Fixed bugs, formatting issues, and improved reliability across common user paths.
-
-## Why this matters
-This project demonstrates real-world web development work:
-integrations, user-facing flows, and shipping features with attention to detail.
+  - Fixed bugs, broken links, formatting issues, and improved reliability.
 
 ## Tech stack
-- Frontend: Next.js / React / TypeScript (edit if needed)
+- Frontend: Next.js / React / TypeScript
 - Styling: (Tailwind / CSS Modules / etc.)
-- Backend: (Node.js / Next.js API routes / etc.)
-- Database: (Postgres / Supabase / Firebase / etc.)
+- Backend: Node.js / Next.js API routes
+- Database: **MongoDB**
 - Integrations: rs.ge
-- Messaging: SMS provider (Twilio / etc.)
-- Deployment: (Vercel / other)
+- Messaging: SMS provider (Twilio)
+- Testing: Unit tests (Jest/Vitest) + **Cypress (E2E)**
 
 ## Architecture (high level)
-- UI (Next.js) renders invoice dashboard + forms
-- Backend/API handles invoice CRUD + integrations + messaging
-- Database stores users/clients/invoices/status history
-- Notifications triggered on invoice events
-
+- Next.js UI renders dashboard + invoice editor
+- API layer handles invoice CRUD, rs.ge requests, SMS, and notification triggers
+- MongoDB stores users/clients/invoices/status + notification records
+- Automated tests cover both logic (unit) and user flows (Cypress)
 
 ## My role
 - Owned the rs.ge integration implementation
 - Implemented SMS flows on backend + frontend
-- Built notifications and shipped multiple product improvements
+- Built notifications
+- Added unit tests + Cypress E2E tests
+- Shipped multiple product improvements in a production-style workflow
 
 ## Contact
 - LinkedIn: [here](https://www.linkedin.com/in/zhana-jikia-b9648a196/)
